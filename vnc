@@ -1,0 +1,5 @@
+#!/bin/sh
+
+#x11vnc auto start
+sudo x11vnc -auth /var/run/lightdm/root/:0 -noxdamage -rfbport 5900 -once -rfbauth /etc/x11vnc/passwd #-localhost # -localhost is for ssh tunneling only
+# -accept popup:0
